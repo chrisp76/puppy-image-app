@@ -1,0 +1,88 @@
+/* filepath: /Users/christianpohlmann/PuppyImages/puppy-image-app/src/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Set the background color to black */
+  color: white; /* Set the default text color to white for better contrast */
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Dark gray for the top bar */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+}
+
+.puppy-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 80px 0 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.favorite-button {
+  margin-top: 10px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.favorite-button:hover {
+  background-color: #e68a00;
+}
+
+.export-button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.export-button:hover {
+  background-color: #45a049;
+}
+
+.favorites {
+  margin-top: 100px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
